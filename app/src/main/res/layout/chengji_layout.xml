@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/chnegjixn"
+            android:gravity="center|center_horizontal"
+            android:background="#f0f0f0"
+            android:text="单击选择学年"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.90" />
+
+        <Button
+            android:id="@+id/chengjibt"
+            android:background="#f0f0f0"
+            android:gravity="center_horizontal|center"
+            android:text="请单击选择学期"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/chengjihv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/scanframeline"/>
+
+                <View style="@style/horizontal_layout"/>
+
+                <View style="@style/horizontal_layout"/>
+
+                <View style="@style/horizontal_layout"/>
+
+            </LinearLayout>
+            <View style="@style/vertical_layout"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

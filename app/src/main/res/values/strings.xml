@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">选课助手</string>
+    <string name="appwidget_text">个人课表</string>
+    <string name="add_widget">添加个人课表</string>
+</resources>
